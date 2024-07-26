@@ -41,7 +41,7 @@ MODEL:
   RANGE: 2
   PRENUM: 7
   PRETRAIN_FILE: "mae_pretrain_vit_large.pth"
-  PRETRAIN_PTH: ""
+  PRETRAIN_PTH: "checkpoints/train/artrack_seq/artrack_seq_large_384_full/ARTrackSeq_ep0060.pth.tar"
   EXTRA_MERGER: False
   RETURN_INTER: False
   BACKBONE:

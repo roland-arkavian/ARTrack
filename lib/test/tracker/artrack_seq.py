@@ -19,6 +19,7 @@ from lib.utils.ce_utils import generate_mask_cond
 class ARTrackSeq(BaseTracker):
     def __init__(self, params, dataset_name):
         super(ARTrackSeq, self).__init__(params)
+
         network = build_artrack_seq(params.cfg, training=False)
         print(self.params.checkpoint)
         network.load_state_dict(torch.load(self.params.checkpoint, map_location='cpu')['net'], strict=True)
